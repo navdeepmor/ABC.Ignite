@@ -1,6 +1,6 @@
 # ABC Ignite
 
-ABC Ignite is a .NET project designed to provide a robust infrastructure for various applications. It includes a dummy `DatabaseContext` and `CacheService` for in-memory operations, making it easy to experiment and test features without connecting to a real database or external cache.
+ABC Ignite is a .NET project that provides APIs for managing classes and bookings. It features a DatabaseContext and CacheService implemented for in-memory operations, enabling quick testing and experimentation with class creation, booking management, and filtering without relying on an external database or cache system.
 
 ---
 
