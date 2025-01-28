@@ -2,7 +2,6 @@
 
 namespace ABC.Ignite.Controllers;
 
-
 [Route("api/bookings")]
 public class BookingsController : BaseApiController
 {

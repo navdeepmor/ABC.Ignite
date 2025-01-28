@@ -14,6 +14,5 @@ public class CachedClassesRepository<T>(ICacheService cache, T repository) : ICl
     public Class? GetClass(int classId, DateOnly participationDate)
     {
         return this.cache.GetOrSet(string.Format(classId.ToString(), participationDate.ToString()), () => this.repository.GetClass(classId, participationDate));
-        //return repository.GetClass(classId, participationDate);
     }
 }
