@@ -1,4 +1,6 @@
-﻿namespace ABC.Ignite.Controllers;
+﻿using ABC.Ignite.Core.FilterOptions;
+
+namespace ABC.Ignite.Controllers;
 
 
 [Route("api/bookings")]
@@ -19,8 +21,8 @@ public class BookingsController : BaseApiController
     }
 
     [HttpGet]
-    public ActionResult<IEnumerable<Booking>> GetBookings([FromQuery] string? memberName, [FromQuery] DateOnly? startDate, [FromQuery] DateOnly? endDate)
+    public ActionResult<IEnumerable<Booking>> GetBookings([FromQuery] BookingParams bookingParams)
     {
-        return Ok(bookingsService.SearchBookings(memberName, startDate, endDate));
+        return Ok(bookingsService.SearchBookings(bookingParams.SearchTerm, bookingParams.StartDate, bookingParams.EndDate));
     }
 }

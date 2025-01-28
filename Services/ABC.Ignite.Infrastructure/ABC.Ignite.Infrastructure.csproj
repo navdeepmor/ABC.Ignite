@@ -16,8 +16,4 @@
     <ProjectReference Include="..\ABC.Ignite.Core\ABC.Ignite.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\Cached\" />
-  </ItemGroup>
-
 </Project>

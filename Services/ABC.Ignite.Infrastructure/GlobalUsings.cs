@@ -4,3 +4,6 @@ global using Autofac;
 global using Microsoft.Extensions.Configuration;
 global using ABC.Ignite.Infrastructure.Repositories;
 global using ABC.Ignite.Infrastructure.Database;
+global using ABC.Ignite.Core;
+global using System.Collections.Concurrent;
+global using ABC.Ignite.Infrastructure.Repositories.Cached;
