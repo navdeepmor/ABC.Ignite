@@ -1,0 +1,1 @@
+﻿global using ABC.Ignite.Core.Models;

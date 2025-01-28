@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ABC.Ignite</RootNamespace>
+    <UserSecretsId>ba2d8ed5-efb7-4597-a1d7-6079055d71e1</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="8.0.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ABC.Ignite.Application\ABC.Ignite.Application.csproj" />
+    <ProjectReference Include="..\ABC.Ignite.Core\ABC.Ignite.Core.csproj" />
+    <ProjectReference Include="..\ABC.Ignite.Infrastructure\ABC.Ignite.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
